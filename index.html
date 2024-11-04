@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Baby Shower de Martín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="invitation">
+        <!-- Contenedor para la imagen y los elementos interactivos -->
+        <div class="invitacion-container">
+            <!-- Imagen de la invitación -->
+            <img src="imagen/Tarjeta Baby Shower Martin Alonso 02.png" alt="Invitación Baby Shower"
+                class="invitacion-imagen">
+
+            <!-- Contenedor para el selector y el botón -->
+            <div class="invitacion-interactiva">
+                <label for="invitadoSelect" class="invitacion-label">Selecciona tu nombre y descubre el regalo para Martín:</label>
+                <select id="invitadoSelect">
+                    <!-- Aquí agregamos los 60 invitados -->
+                    <option value="">-- Selecciona tu nombre --</option>
+                    <option value="invitado1">Abuela Ester y Alba Alonso</option>
+                    <option value="invitado2">Alba y Efrain Charry</option>
+                    <option value="invitado3">Ana lucia Savedra</option>
+                    <option value="invitado4">Aura</option>
+                    <option value="invitado5">Belladira Cortez</option>
+                    <option value="invitado6">Carmenza de Galan</option>
+                    <option value="invitado7">Camila Gutierrez y Esposo</option>
+                    <option value="invitado8">Cecilia Torres</option>
+                    <option value="invitado9">Diana Torres</option>
+                    <option value="invitado10">Dallan</option>
+                    <option value="invitado11">Giny Tobar</option>
+                    <option value="invitado12">Helena Salguero</option>
+                    <option value="invitado13">Jairo Andres Cobaleda y Esposa</option>
+                    <option value="invitado14">Jarol Lizcano</option>
+                    <option value="invitado15">Jazmin Ortiz</option>
+                    <option value="invitado16">Jorge Cobaleda</option>
+                    <option value="invitado17">Juan Manuel Pico y Jenni</option>
+                    <option value="invitado18">Julian Camilo Mendez y Esposa</option>
+                    <option value="invitado19">Kevin Medina</option>
+                    <option value="invitado20">Ingrid Cobaleda y Fernando Serrano y Miguelito</option>
+                    <option value="invitado21">Orlando Aguirre</option>
+                    <option value="invitado22">Luis Fernando Diaz</option>
+                    <option value="invitado23">Luz Rojas</option>
+                    <option value="invitado24">Lucy Aguirre y Jairo Cobaleda</option>
+                    <option value="invitado25">Ligia Yake</option>
+                    <option value="invitado26">Leo Medina</option>
+                    <option value="invitado27">Lucena Celis</option>
+                    <option value="invitado28">Magali Gutierrez</option>
+                    <option value="invitado29">Maria Fernanda</option>
+                    <option value="invitado30">Maria Paula Preciado</option>
+                    <option value="invitado31">Maribel Peñaloza</option>
+                    <option value="invitado32">Maricela Echeverry</option>
+                    <option value="invitado33">Nohora Ferro</option>
+                    <option value="invitado34">Familia Montenegro Jaque</option>
+                    <option value="invitado35">Sonia Peralta</option>
+                    <option value="invitado36">Sandra Cobaleda e hijos</option>
+                    <option value="invitado37">Tatiana Esquivel</option>
+                    
+                   
+                   
+                    
+                </select>
+                <button onclick="mostrarRegalo()">Mostrar regalo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="gift hidden" id="gift">
+        <h2>¡Este es tu regalo asignado!</h2>
+        <p id="regalo"></p>
+        <button onclick="volver()">Volver a la invitación</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
